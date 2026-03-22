@@ -1,4 +1,4 @@
-# Simple Memory game 
+# Simple Match 2 Game
 using React and JavaScript
 
 Reveal pairs of cards among 12 different unknown cards. You can only reveal two cards per turn. Revealed cards are hidden again if they are not matched with the correct other one.
