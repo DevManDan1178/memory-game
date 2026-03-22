@@ -58,7 +58,12 @@ function App() {
         return;
       } 
       inputsDisabled = true;
-      setTimeout(() => resetTurn(), 1000)
+      setTimeout(() => {
+        if (!(choiceOne && choiceTwo)) {
+            return;
+        }
+        resetTurn()
+      }, 1000)
   }
   
 
@@ -81,6 +86,7 @@ function App() {
   }
   //Only runs at start
   useEffect(shuffleCards, []);
+
   return (
     <div className="App">
       <h1>Match stuff</h1>  
